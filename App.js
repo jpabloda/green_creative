@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, ScrollView, Button, SafeAreaView } from 'react-native';
-
+import { ScaledSheet } from 'react-native-size-matters';
 import { LinearGradient } from 'expo-linear-gradient';
 
 export default function App() {
@@ -120,9 +120,9 @@ style={styles.headerBackground2}
 );
 }
 
-const styles = StyleSheet.create({
+const styles = ScaledSheet.create({
 container: {
-flex: 1,
+flex: '1@s',
 flexDirection: "column",
 height: "100%",
 alignItems: "center",
@@ -132,33 +132,33 @@ justifyContent: 'center',
 },
 contentBorder: {
 backgroundColor: "#bed2b7",
-padding: 15,
-borderRadius: 20,
-marginLeft: 10,
-marginRight: 10
+padding: '15@s',
+borderRadius: '20@s',
+marginLeft: '10@s',
+marginRight: '10@s',
 },
 contentBorderTwo: {
-borderRadius: 20,
-flex: 1,
+borderRadius: '20@s',
+flex: '1@s',
 flexDirection: "column",
-marginBottom: 0,
+marginBottom: '0@s',
 },
 header: {
-paddingLeft: 10,
-paddingRight: 10,
-//paddingTop: 10,
-flex: 3,
+paddingLeft: '10@s',
+paddingRight: '10@s',
+//paddingTop: '10@s',
+flex: '3@s',
 justifyContent: "center",
 height: "100%",
 fontWeight: "bold",
-borderRadius: 20,
+borderRadius: '20@s',
 
 },
 headerTitle: {
-  paddingLeft: 20,
-  paddingTop: 10,
+  paddingLeft: '20@s',
+  paddingTop: '10@s',
   fontWeight: "bold",
-  flex: 1,
+  flex: '1@s',
   justifyContent: "center",
   //borderRadius: 20,
   //backgroundColor: "#d7e6d8",
@@ -171,65 +171,70 @@ left: 0,
 right: 0,
 //top: 0,
 height: "100%",
-borderRadius: 10,
+borderRadius: '10@s',
+
 },
 headerBackground2: {
-  marginLeft: 10,
-  marginRight: 10,
+  marginLeft: '10@s',
+  marginRight: '10@s',
   position: 'absolute',
   left: 0,
   right: 0,
-  top: 7,
+  top: '7@s',
   height: "100%",
-  borderRadius: 10,
+  borderRadius: '10@s',
+  
   },
 
 h1: {
 fontWeight: "800",
-fontSize: 24,
+fontSize: '24@s',
 color: "#283823"
 },
 subtitle: {
 color: "#679159",
 fontWeight: "700",
-fontSize: 12
+fontSize: '12@s'
 },
 navContainer: {
 flexDirection: "row",
-flex: 70,
-marginBottom: 10
+flex: '1@s',
+marginBottom: '10@s',
+
+
+
 
 },
 navButton: {
-flex: 1,
+flex: '1@s',
 justifyContent: "center",
 alignItems: "center",
-height: 50,
-paddingLeft: 10,
-paddingRight: 10,
-paddingBottom: 25
+height: '50@s',
+paddingLeft: '10@s',
+paddingRight: '10@s',
+paddingBottom: '25@s'
 },
 navButtonBkg: {
 position: 'absolute',
-left: 0,
-right: 0,
-top: 0,
+left: '0@s',
+right: '0@s',
+top: '0@s',
 height: "100%"
 },
 navBtnTxt: {
 color: "#fff",
 fontWeight: "700",
-fontSize: 14
+fontSize: '14@s'
 },
 test: {
 backgroundColor: "white",
-borderRadius: 10,
+borderRadius: '10@s',
 
 },
 text: {
-  paddingLeft: 10,
-  paddingRight: 10,
-  paddingTop: 15,
+  paddingLeft: '10@s',
+  paddingRight: '10@s',
+  paddingTop: '15@s',
   
 }
 
